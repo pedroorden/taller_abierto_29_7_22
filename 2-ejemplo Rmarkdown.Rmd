@@ -1,0 +1,34 @@
+---
+title: "Ejemplo de archivo markdown"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+**R Markdown** es un formato similar a **Quarto** que permite una fácil creación de documentos, presentaciones dinámicas y informes de R. Markdown es un formato de sintaxis simple para crear documentos en HTML, PDF, y Word. En el siguiente link pueden encontrar información de como se crean estos documentos <http://rmarkdown.rstudio.com>.
+
+Modo **editor visual.**
+
+Maneja también cuadros de código:
+
+```{r cars}
+ejemplo <- c(1,4,6,3,9,5,2)
+
+print(ejemplo)
+
+```
+
+[Distintos]{.ul} *tipos* de **texto** enriquecido para redactar el informe.
+
+Y por supuesto la incorporación o generación de gráficas:
+
+```{r pressure, echo=FALSE}
+
+ejemplo <- c(1,4,6,3,9,5,2)
+
+plot(ejemplo)
+```
